@@ -1,42 +1,34 @@
 # OctoAcme Project Management Docs
 
-This folder contains the core project management guidance for OctoAcme. The goal is to provide a shared, easy-to-follow set of processes that help teams initiate work, plan delivery, manage risk, communicate clearly, and improve over time.
+This folder contains the core project management guidance for OctoAcme. The purpose is to provide a shared and discoverable set of processes that guide initiation, planning, execution, release, and continuous improvement across cross-functional work.
 
-OctoAcme uses a structured project lifecycle that starts with validating the need for a project or feature, moves into planning and backlog creation, then executes work in iterative increments with clear ownership, testing, and progress tracking. The project is governed by a simple rhythm of regular updates, milestone reviews, and release checks so work stays aligned with business value and team capacity.
+OctoAcme uses a simple, repeatable lifecycle to turn ideas into delivery. The team first validates the business need and key stakeholders, then plans the scope, milestones, dependencies, and quality expectations. Once work is approved, execution happens in iterative increments with clear owners, visible progress, and regular communication. After delivery, the team verifies outcomes, releases changes with guardrails, and captures lessons to improve the next cycle.
 
-## Project lifecycle overview
+## Core workflows and responsibilities
 
-OctoAcme follows a repeatable flow:
+OctoAcme relies on clearly defined roles and consistent workflows. The Project Manager coordinates delivery, schedules, risks, dependencies, and communication. Product leaders define the desired outcomes, prioritize the work, and measure success. Developers build the solution and maintain quality through testing, design collaboration, and code review. QA validates acceptance criteria and readiness for release. These responsibilities are described in more detail in the roles and personas guide.
 
-1. Initiation — confirm the problem, stakeholders, success metrics, and decision to proceed.
-2. Planning — define scope, milestones, backlog priorities, dependencies, and quality expectations.
-3. Execution — deliver work in small increments, track progress, surface blockers, and review outcomes.
-4. Release & deployment — validate quality, deploy intentionally, and verify impact.
-5. Closeout & improvement — capture lessons learned, action items, and opportunities for ongoing improvement.
+The project process is organized around a project board with columns such as Backlog, Ready, In Progress, In Review, QA, and Done. Work moves through a lightweight lifecycle: initiation, planning, execution, release, and retrospective. Teams use a one-pager to define the problem, success metrics, stakeholders, timeline, and risks before committing to planning. During planning, backlog items are prioritized, estimated, and linked to acceptance criteria and a Definition of Done.
 
-## Core roles and responsibilities
+## Communication, risk, and escalation
 
-OctoAcme relies on clear ownership across roles. The Project Manager coordinates delivery, schedules, risks, and communication. Product leaders define outcomes, prioritize work, and measure success. Developers implement features and maintain quality through testing and collaboration. QA validates acceptance and readiness. Stakeholders provide input, approvals, and business context. These responsibilities are described in more detail in the roles and personas guide.
+OctoAcme emphasizes regular communication so work stays visible and aligned. Daily standups focus on progress, blockers, and dependencies, while weekly delivery syncs review progress, risks, and next steps. PM and Product Lead alignment help keep priorities and stakeholder expectations in sync, and demos or milestone reviews provide visible progress updates. Risks are tracked in a risk register and monitored through the project board and weekly reviews. When blockers become significant, escalation follows a clear path from the team to the PM, then to Product leadership or a sponsor when needed.
 
-## Communication and execution practices
+## Quality assurance and release practices
 
-The team uses consistent communication patterns to keep work transparent and aligned. Daily standups focus on progress, blockers, and dependencies, while weekly syncs are used for delivery updates and risk review. Demos or milestone reviews help surface value and confirm that work is tracking toward agreed outcomes. When escalation is needed, issues move from the team to the PM and then to Product or sponsor stakeholders depending on impact.
-
-## Quality assurance and release standards
-
-Quality is treated as a continuous part of delivery instead of a final step. Teams are expected to write unit tests for new logic, add integration tests where appropriate, and run smoke tests for critical flows before release. CI should enforce linting and automated tests before pull requests are approved, and security scanning is part of the release gate. At release time, teams confirm acceptance criteria, run deployment verification, document release notes, and prepare for rollback if needed.
+Quality is handled as part of delivery rather than as a last-minute checkpoint. The team is expected to write unit tests for new logic, add integration tests where appropriate, run end-to-end smoke tests for critical flows, and complete security scanning in CI. Pull requests should be small, include issue references and acceptance criteria, and undergo automated checks and review before merging. Release readiness requires passing CI, meeting acceptance criteria, documenting release notes, and preparing for rollback or mitigation if needed. After every release or milestone, teams use retrospectives to identify what went well, what can improve, and which actions should be tracked in the backlog.
 
 ## Documentation index
 
-- [Project Management Overview](octoacme-project-management-overview.md) — high-level summary of the project lifecycle, principles, roles, and artifacts.
-- [Project Initiation Guide](octoacme-project-initiation.md) — steps for validating a new initiative and deciding whether to proceed.
-- [Project Planning](octoacme-project-planning.md) — backlog, dependencies, milestones, and Definition of Done.
-- [Execution & Tracking](octoacme-execution-and-tracking.md) — day-to-day delivery rhythm, reporting, blockers, and testing expectations.
-- [Risk Management & Communication](octoacme-risks-and-communication.md) — risk register, escalation paths, and stakeholder communication patterns.
-- [Release & Deployment Guide](octoacme-release-and-deployment.md) — pre-release checks, deployment steps, rollback playbooks, and release notes.
-- [Retrospective & Continuous Improvement](octoacme-retrospective-and-continuous-improvement.md) — how to capture lessons and turn them into action.
-- [Roles and Personas](octoacme-roles-and-personas.md) — shared role definitions and how they fit the OctoAcme operating model.
+- [Project Management Overview](octoacme-project-management-overview.md)
+- [Project Initiation Guide](octoacme-project-initiation.md)
+- [Project Planning](octoacme-project-planning.md)
+- [Execution & Tracking](octoacme-execution-and-tracking.md)
+- [Risk Management & Communication](octoacme-risks-and-communication.md)
+- [Release & Deployment Guide](octoacme-release-and-deployment.md)
+- [Retrospective & Continuous Improvement](octoacme-retrospective-and-continuous-improvement.md)
+- [Roles and Personas](octoacme-roles-and-personas.md)
 
-## Continuous improvement
+## Summary
 
-OctoAcme treats project management as a living system. Retrospectives, action tracking, stakeholder feedback, and regular process review help the team improve delivery quality and communication over time. The overall goal is to turn tacit knowledge into a common operating model that reduces dependency on a single person and makes the team more consistent, scalable, and resilient.
+OctoAcme’s project management approach is centered on disciplined initiation, transparent communication, clear ownership, and measurable delivery. It combines role clarity, iterative execution, testing and QA standards, risk management, and continuous improvement so that teams can move from idea to release with less ambiguity and more accountability.
